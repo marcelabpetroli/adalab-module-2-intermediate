@@ -6,11 +6,12 @@
 html {
   font-size: 62.5%;
   font-family: sans-serif;
+  background-image: linear-gradient(to right, slateblue, coral);
 }
 .main {
   height: 100vh;
-  background-image: linear-gradient(to right, slateblue, coral);
-  color: white;
+
+  color: black;
   text-align: center;
   padding: 10rem;
 }
@@ -20,7 +21,7 @@ html {
 }
 .title-sub {
   font-size: 5rem;
-  padding: 10rem;
+  padding: 5rem;
 }
 .legend-text {
   font-size: 5rem;
@@ -62,4 +63,5 @@ p {
   gap: 50rem;
   justify-content: center;
   margin-top: 3rem;
+  padding-bottom: 4rem;
 }
