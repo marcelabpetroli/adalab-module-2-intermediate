@@ -1,6 +1,7 @@
 "use strict";
 
 const btnBattleElement = document.querySelector(".js-btn-battle");
+const playerChoiceElement = document.querySelector(".js-select");
 
 //Computer can choose one of these options
 const computerOptions = [
@@ -20,6 +21,7 @@ function getRandomNumber(max) {
 function handleClick(e) {
   e.preventDefault();
   const computerChoice = computerOptions[getRandomNumber(5) - 1];
+  const pChoice = playerChoiceElement.value;
 }
 
 //Listening to event click on the buttn "BATALLA"
