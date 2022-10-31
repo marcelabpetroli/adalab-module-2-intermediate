@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+.main {
+  height: 100vh;
+  background-image: linear-gradient(to right, slateblue, coral);
+  color: white;
+  text-align: center;
+  padding: 10rem;
+}
+.title {
+  font-size: 7rem;
+  padding: 10rem;
+}
+.title_sub {
+  font-size: 5rem;
+  padding: 10rem;
+}
+.legend_text {
+  font-size: 5rem;
+  padding: 5rem;
+}
+.select {
+  font-size: 2rem;
+}
+.btn {
+  margin-left: 3rem;
+  width: 12rem;
+  height: 7rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: white;
+  font-size: 3rem;
+  background-color: rgb(117, 58, 58);
+}
+.restart {
+  width: 30rem;
+}
+.start-battle-text,
+.points,
+p {
+  margin-top: 8rem;
+  font-size: 4rem;
+}
+.points {
+  color: rgb(61, 58, 58);
+}
+
+.hidden {
+  display: none;
+}
+
+.players {
+  display: flex;
+  gap: 50rem;
+  justify-content: center;
+  margin-top: 3rem;
+}

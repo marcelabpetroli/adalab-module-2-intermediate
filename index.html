@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Anillos del Poder</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">Los Anillos del Poder</h1>
+      <h2 class="title_sub">Eres un jugador del ejercito del bien, no olvides tu misión de ganar la batalla.</h2>
+      <form>
+        <legend class="legend-text">Elije tu luchador!</legend>
+        <select class="select js-select">
+          <option value="">Raza 1: Pelosos con fuerza (1)</option>
+          <option value="">Raza 2: Sureños con fuerza (1)</option>
+          <option value="">Raza 3: Enanos con fuerza (1)</option>
+          <option value="">Raza 4: Númenóreanos con fuerza (1)</option>
+          <option value="">Raza 5: Elfos con fuerza (1)</option>
+        </select>
+        <button class="btn battle js-btn-battle">Batalla</button>
+        <button class="btn restart hidden js-btn-restart">Reiniciar Juego</button>
+        <h3 class="start-battle-text js-start-battle">¡Comienza la batalla!</h3>
+        <h4 class="points">Puntuaciones</h4>
+        <div class="players">
+          <p>Jugador: <span class="player-score">0</span></p>
+          <p>Computadora: <span class="player-score">0</span></p>
+        </div>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
