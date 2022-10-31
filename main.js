@@ -26,6 +26,7 @@ function handleClick(e) {
   playGame();
 }
 
+//Function that executes the game logic
 function playGame() {
   const computerChoice = computerOptions[getRandomNumber(5) - 1];
   const playerChoice = parseInt(playerChoiceElement.value);
