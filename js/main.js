@@ -46,6 +46,7 @@ function playGame() {
   if (parseInt(numberBattles) === 10) {
     btnRestartGameElement.classList.remove('hidden');
     btnBattleElement.classList.add('hidden');
+    btnRestartGameElement.addEventListener('click', restartGame);
   }
 }
 
@@ -63,6 +64,18 @@ function playerWins() {
   numberBattles++;
   playerScore.innerHTML = pScore;
   numberOfBattlesElement.textContent = numberBattles;
+}
+
+function restartGame(event) {
+  event.preventDefault();
+  pScore = 0;
+  cScore = 0;
+  numberBattles = 0;
+  computerScore.innerHTML = cScore;
+  playerScore.innerHTML = pScore;
+  numberOfBattlesElement.textContent = numberBattles;
+  btnRestartGameElement.classList.add('hidden');
+  btnBattleElement.classList.remove('hidden');
 }
 
 //Listening to event click on the buttn "BATALLA"
