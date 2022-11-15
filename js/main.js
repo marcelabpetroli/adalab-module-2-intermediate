@@ -40,7 +40,6 @@ function playGame() {
   } else if (playerChoice > computerChoice) {
     playerWins();
   } else {
-    message.textContent = `Ha ganado el Ejército del Mal! Vuelve a intentarlo 👾 ❌`;
     computerWins();
   }
   if (parseInt(numberBattles) === 10) {
