@@ -34,9 +34,7 @@ function playGame() {
   const playerChoice = parseInt(playerChoiceElement.value);
 
   if (playerChoice === computerChoice) {
-    message.textContent = `Empate 💥`;
-    numberBattles++;
-    numberOfBattlesElement.textContent = numberBattles;
+    itIsTie();
   } else if (playerChoice > computerChoice) {
     playerWins();
   } else {
@@ -47,6 +45,12 @@ function playGame() {
     btnBattleElement.classList.add('hidden');
     btnRestartGameElement.addEventListener('click', restartGame);
   }
+}
+
+function itIsTie() {
+  message.textContent = `Empate 💥`;
+  numberBattles++;
+  numberOfBattlesElement.textContent = numberBattles;
 }
 
 function computerWins() {
