@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Los Anillos del Poder</title>
+    <link rel="icon" type="image/png" href="assets/swords.png" />
+    <title>The Rings Of Power</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+  <header class="header">
+    <div class="header__text-box">
+      <h1 class="heading-primary">The<span class="heading-primary-sub">Rings</span> of Power</h1>
+    </div>
+  </header>
   <body>
     <main class="main">
-      <h1 class="title">Los Anillos del Poder</h1>
-      <h2 class="title-sub">Eres un jugador del ejercito del bien, no olvides tu misión de ganar la batalla.</h2>
-      <form>
-        <legend class="legend-text">Elije tu luchador!</legend>
+      <h2 class="main__text">You are a player of the Army of Good, do not forget your mission, to win the battle!</h2>
+      <form class="form">
+        <legend class="legend__text">Pick a fighter!</legend>
         <select class="select js-select">
-          <option value="1">Raza 1: Pelosos con fuerza (1)</option>
-          <option value="2">Raza 2: Sureños con fuerza (2)</option>
-          <option value="3">Raza 3: Enanos con fuerza (3)</option>
-          <option value="4">Raza 4: Númenóreanos con fuerza (4)</option>
-          <option value="5">Raza 5: Elfos con fuerza (5)</option>
+          <option value="1">Race 1: Harfoots - strength 1</option>
+          <option value="2">Race 2: Ents - strength 2</option>
+          <option value="3">Race 3: Dwarves - strength 3</option>
+          <option value="4">Race 4: Númenóreans - strength 4</option>
+          <option value="5">Race 5: Elves - strength 5</option>
         </select>
-        <button class="btn battle js-btn-battle">Batalla</button>
-        <button class="btn restart hidden js-btn-restart">Reiniciar Juego</button>
-        <h3 class="start-battle-text js-start-battle">¡Comienza la batalla!</h3>
-        <p>Numero de batallas: <span class="js-number-battles">0</span></p>
-        <h4 class="points">Puntuaciones</h4>
-        <div class="players">
-          <p>Jugador: <span class="player-score">0</span></p>
-          <p>Computadora: <span class="computer-score">0</span></p>
-        </div>
+        <button class="btn battle js-btn-battle">Batlle!</button>
+        <div class="line"></div>
+        <button class="btn restart hidden js-btn-restart">Reset</button>
       </form>
+      <div class="battle__info">
+        <h3 class="start-battle-text js-start-battle">The battle has begun!</h3>
+        <p>Number of battles: <span class="js-number-battles">0</span></p>
+        <h4 class="points">Points</h4>
+      </div>
+      <div class="players">
+        <p>Player: <span class="player-score">0</span></p>
+        <p>Computer: <span class="computer-score">0</span></p>
+      </div>
     </main>
     <script src="./js/main.js"></script>
   </body>

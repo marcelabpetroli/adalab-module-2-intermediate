@@ -14,21 +14,17 @@ let numberBattles = 0;
 let pScore = 0;
 let cScore = 0;
 
-//Computer can choose one of these options
 const computerOptions = [2, 2, 2, 3, 5];
 
-//Function that generates random number
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-//Function to execute all the other small functions
 function handleClick(e) {
   e.preventDefault();
   playGame();
 }
 
-//Function that executes the game logic
 function playGame() {
   const computerChoice = computerOptions[getRandomNumber(5) - 1];
   const playerChoice = parseInt(playerChoiceElement.value);
@@ -48,13 +44,13 @@ function playGame() {
 }
 
 function itIsTie() {
-  message.textContent = `Empate 💥`;
+  message.textContent = `It's a tie 💥`;
   numberBattles++;
   numberOfBattlesElement.textContent = numberBattles;
 }
 
 function computerWins() {
-  message.textContent = `Ha ganado el Ejército del Mal! Vuelve a intentarlo 👾 ❌`;
+  message.textContent = `Sauron's Army has won. Try again! 👾 ❌`;
   cScore++;
   numberBattles++;
   computerScore.innerHTML = cScore;
@@ -62,7 +58,7 @@ function computerWins() {
 }
 
 function playerWins() {
-  message.textContent = `Ha ganado el Ejército del Bien! Enhorabuena ⚔️ 🛡`;
+  message.textContent = `The Army of Good has won! Congrats ⚔️ 🛡`;
   pScore++;
   numberBattles++;
   playerScore.innerHTML = pScore;
