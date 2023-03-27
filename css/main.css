@@ -12,16 +12,17 @@ body {
   font-family: 'Raleway', sans-serif;
   padding: 2rem;
   box-sizing: border-box;
+  background-color: rgb(241, 246, 245);
 }
 
 .header {
-  height: 85vh;
+  height: 65vh;
   background-image: linear-gradient(to right bottom, rgba(212, 212, 148, 0.7), rgba(40, 117, 180, 0.7)),
     url('../assets/rings-of-power.jpeg');
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
 }
 
 .header__logo-box {
@@ -68,10 +69,10 @@ body {
 }
 
 .main {
-  padding: 3rem 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .main__text {
@@ -82,6 +83,7 @@ body {
 .form {
   margin-top: 3rem;
   height: 10rem;
+  width: 50%;
   background-color: rgba(142, 158, 153, 0.588);
   border-radius: 2rem;
   display: flex;
@@ -91,14 +93,14 @@ body {
   margin-bottom: 3rem;
 }
 .legend__text {
-  font-size: 1.8rem;
+  font-size: 4rem;
   color: rgb(203, 99, 68);
   font-weight: bolder;
   letter-spacing: 0.2rem;
 }
 .select {
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-family: 'Raleway', sans-serif;
   color: rgb(204, 200, 137);
@@ -120,7 +122,7 @@ body {
   border: 4px solid rgb(209, 193, 15);
   padding: 10px 12px;
   background-color: rgb(236, 233, 233);
-  color: rgb(71, 71, 71);
+  color: rgb(48, 48, 48);
   transition: 0.4s;
 }
 .btn.restart {
@@ -138,11 +140,11 @@ body {
   background-color: rgb(144, 143, 143);
 }
 .start-battle-text {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: brown;
 }
 .battle__info {
-  font-size: 1.8rem;
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -150,5 +152,13 @@ body {
 .players {
   display: flex;
   justify-content: space-around;
-  font-size: 2rem;
+  align-items: center;
+  font-size: 4rem;
+  gap: 30rem;
+}
+.player {
+  background-color: rgb(218, 142, 142);
+  border-radius: 5rem;
+  width: 40rem;
+  height: 5rem;
 }
